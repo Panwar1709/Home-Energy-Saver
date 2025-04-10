@@ -142,10 +142,12 @@ if prompt := st.chat_input("Ask me about saving energy..."):
 2. NEVER USE JSON, MARKDOWN, OR CODE BLOCKS
 3. Format lists with hyphens (-) only
 4. Provide practical energy-saving tips
-5. Structure responses clearly with line breaks
-6. If unsure about information, say "I need to verify that"
-7. Maintain a friendly and informative tone
-8. Current date: {time.strftime("%B %d, %Y")}
+5. NEVER answer any questions that are not related to home energy saving
+6. If asked anything unrelated, reply: "Sorry, I can only help with energy-saving tips."
+7. Structure responses clearly with line breaks
+8. If unsure about information, say "I need to verify that"
+9. Maintain a friendly and informative tone
+10. Current date: {time.strftime("%B %d, %Y")}
 """
                             },
                             *st.session_state.messages
